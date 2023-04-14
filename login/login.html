@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="./assets/rosa-cropped.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@300;400;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="../assets/iconos/icon_menu.svg" alt="menu" class="menu">
+
+        <div class="navbar-left">
+            <img src="../assets/logos/logoblancoblanco-cropped.svg" alt="logo" class="logo">
+
+            <ul>
+                <li>
+                    <a href="">Servicios</a>
+                </li>
+                <li>
+                    <a href="">Marketplace</a>
+                </li>
+                <li>
+                    <a href="">Iniciar Sesion</a>
+                </li>
+                <li>
+                    <a href="">Contactanos</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+            <li class="email">ejemplo@example.com</li>
+            <li class="navbar-shopping-cart">
+                <img src="../assets/iconos/icon_shopping_cart.svg" alt="shopping-cart">
+                <div>5</div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="login">
+
+        <div class="form-container">
+            <div><img src="./assets/rosa-cropped.svg" alt="logo2" class="logo2"></div>
+
+            <!-- <h1 class="title">Inicia Sesión</h1> -->
+            <p class="subtitle"></p>
+            
+            <form action="" class="form">
+                <label for="email" class="label">Email</label> 
+                <input type="text" id="email" placeholder="ejemplo@example.com" class="input input-email">
+
+                <label for="password" class="label">Contraseña</label> 
+                <input type:"password" id="password" placeholder="******" class="input input-password">
+
+                <input type="submit" value="Iniciar Sesión" class="primary-button login-button">
+
+                <a href="./password.html">Olvidaste tu contraseña?</a>
+
+            </form>
+            <div class="separator"><span> O </span></div>
+            <button class="secundary-button sign-up button">Registrate!</button>    
+            </div>
+        </div>
+
+        <footer>
+            <div class="columna">
+                <p>Contenido de la columna 1</p>
+            </div>
+            <div class="columna">
+                <p>Contenido de la columna 2</p>
+            </div>
+            <div class="columna">
+                <p>Contenido de la columna 3</p>
+            </div>
+            <div class="columna">
+                <p>Contenido de la columna 4</p>
+            </div>
+        </footer>
+        <script src="./login.js"></script>
+</body>
+</html>
