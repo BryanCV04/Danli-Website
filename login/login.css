@@ -267,15 +267,99 @@ nav{
    }
 }
 
-/* footer */
+/* FOOTER */
 
-footer {
-    background-color: rgba(36,35,43,var(--tw-bg-opacity));
-    color: white;
-    display: flex;
+footer{
+font-size: var(--pm);
+line-height: 1.3;
+box-sizing: border-box;
+display: block;
+padding-top: 30px;
+padding-bottom: 30px;
+background: rgba(36,35,43,var(--tw-bg-opacity));;
+text-align: center;
+align-items: center;
+}
+.footer .socialBox {
+display: grid;
+place-items: center;
+}
+    
+.socialBox {
+margin-bottom: 14px;
+}
+.socialBox ul li{
+float: left;
+}
+.footer .socialBox ul li{
+text-decoration: none;
+list-style: none;
+}
+.footer .socialBox ul li a{
+display: block;
+font-size: 40px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+/* color: var(--rosa-oscuro); */
+/* text-align: row; */
+/* line-height: 60px; */
+/* margin-right: 12px; */
+}
+.socialBox ul li a:hover{
+ width: 70px;
+ height: 70px;
+ border: 2px solid var(--morado-claro);
+}
+.socialBox ul li+li{
+margin-left:10px
+}
+.socialBox:before,.socialBox:after{
+content:" ";
+display:table
+}
+.clearfix:before,.clearfix:after{
+content:" ";
+display:table
+}
+.clearfix:after{
+clear:both
 }
 
-.columna {
-    flex: 1;
-    text-align: center;
+/* links de pagina estaticas */
+
+.footer .footerLinks ul{
+display:inline-block;
+list-style: none;
+}
+.footer .footerLinks ul li{
+float:left;
+padding:0 30px
+}
+.footer .footerLinks ul li a{
+display:block;
+font-size:18px;
+list-style: none;
+text-decoration: none;
+color: white;
+}
+.footer .footerLinks ul li a:hover{
+color: var(--morado-claro)
+}
+.footer .footerLinks ul li+li{
+border-left:1px solid var(--morado-claro)
+}
+.footer .footerLinks ul:after{
+content:"";
+/* display:table; */
+clear:both
+}
+.copyright a{
+color: var(--morado-claro);
+}
+
+@media (max-width:640px) {
+.footer{
+    display: none;
+    }
 }
