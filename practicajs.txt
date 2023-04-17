@@ -1,0 +1,3 @@
+La propiedad overflow de CSS especifica si el contenido que es demasiado grande para ajustarse en un área debe ser recortado o si se deben agregar barras de desplazamiento. Cuando se establece en hidden, el contenido que se desborda se recorta y el resto del contenido será invisible1. ¿Hay algo más en lo que pueda ayudarte?
+
+el atributo onclick="function()" y el atributo onchange="function()", nos permite escuchar eventos desde html

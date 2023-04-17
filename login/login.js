@@ -13,3 +13,5 @@ subtitle.innerHTML = 'Ingresa a tu cuenta para acceder a las ultimas novedades';
 print()
 
 // funciones secundarias 
+
+// aqui estableceremos las funciones secundarias

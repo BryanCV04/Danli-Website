@@ -231,10 +231,10 @@ $RECYCLE.BIN/
 *.msix
 *.msm
 *.msp
+.assets
 
 # Windows shortcuts
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,node
 
-assets/
