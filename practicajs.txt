@@ -1,3 +1,50 @@
 La propiedad overflow de CSS especifica si el contenido que es demasiado grande para ajustarse en un área debe ser recortado o si se deben agregar barras de desplazamiento. Cuando se establece en hidden, el contenido que se desborda se recorta y el resto del contenido será invisible1. ¿Hay algo más en lo que pueda ayudarte?
 
 el atributo onclick="function()" y el atributo onchange="function()", nos permite escuchar eventos desde html
+
+view-source:  
+al principio para ver el recurso de la pagina
+
+                            <!-- <li>
+            <a href="https://sapphirenation.net/" target="_blank">    <span class="icon-Nblog"></span>
+            </a>                </li> -->
+
+footer{
+/* -webkit-text-size-adjust: 100%; */
+/* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+/* padding: 60px 0; */
+}
+
+
+.socialBox{
+    /* display: flex;
+    flex-direction: row;
+    padding-right: 0%; */
+
+    /* width: 100%;
+    display: grid;
+    place-items: center !important; */
+    
+}
+
+el login es clase 3
+
+------------------------------------------------------------------------------------
+
+
+let h1 = document.querySelector('.subtitle')
+
+let h1 = document.querySelector('h1)
+h1.getAttribute(''): nos ayuda a leer atributos
+
+h1.setAttribute (''): nos ayuda a modificar una clase
+
+h1.classList.add('subtitulo'); para añadir clases ala etiqueta
+
+h1.classList.remove('') para remover la clase que le indiquemos
+
+h1.classList.toggle('') dependiendo si tiene la clase o no , se la quitamos o se la ponemos mediante eventos de js
+
+h1.classList.contains('') devuelve false o true dependiendo si tiene la clase que le ponemos
+
+document.createElement : nos ayuda a crear el elemento html que queramos
