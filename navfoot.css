@@ -1,27 +1,27 @@
 :root{
     /* PALETA PRINCIPAL */
-    --morado-oscuro: #370075;
-    --morado-claro: #8c52ff; 
-    --rosa-oscuro:#FF5096;
-    --rosa-claro: #FF99CC;
-    --text-grey: #c7c7c7;
-    /* TEXTOS E INPUTS */
-    --text-input-field: #f7f7f7;
-    --white: #FFFFFF;
-    --black: #000000;
-    /* TAMAÑO DE FUENTE */
-    --pp: 14px;
-    --pm: 16px;
-    --pg: 40px;
+--morado-oscuro: #370075;
+--morado-claro: #8c52ff; 
+--rosa-oscuro:#FF5096;
+--rosa-claro: #FF99CC;
+--text-grey: #c7c7c7;
+/* TEXTOS E INPUTS */
+--text-input-field: #f7f7f7;
+--white: #FFFFFF;
+--black: #000000;
+/* TAMAÑO DE FUENTE */
+--pp: 14px;
+--pm: 16px;
+--pg: 40px;
 
-    --tw-bg-opacity: 1;
+--tw-bg-opacity: 1;
 }
  body {
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Poppins', sans-serif;
-    background-color: rgba(36,35,43,var(--tw-bg-opacity));
-    color: white;
-    margin: 0;
+/* font-family: 'Montserrat', sans-serif; */
+font-family: 'Poppins', sans-serif;
+background-color: rgba(36,35,43,var(--tw-bg-opacity));
+color: white;
+margin: 0;
 }
 
 /* navegacion */
