@@ -242,3 +242,4 @@ assets/
 
 # Editor
 .vscode
+.vscode/settings.json
