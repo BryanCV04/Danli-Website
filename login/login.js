@@ -10,7 +10,7 @@ function subtitulo(){
 subtitle.innerHTML = 'Ingresa a tu cuenta para acceder a las ultimas novedades';
 }
 
-print()
+// print()
 
 // funciones secundarias 
 
