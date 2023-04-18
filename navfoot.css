@@ -416,6 +416,7 @@ footer{
 
     .copyright a::selection{
         background-color: var(--morado-oscuro);
+        color: WHITE;
     }
     
     @media (max-width:640px) {
