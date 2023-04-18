@@ -12,3 +12,7 @@ Se modifico el nav añadiendole un atributo para que se quedara fijo siempre, se
 Se modifico el footer añadiendole un boton que lleva al principio de la pagina, y se modifico la cantidad de links y la politica de privacidad.
 
 git reset --hard db4f5256a9a84c5d3edfa35b1b4d24db5930eb5e
+
+V1.4: Se agrego un archivo de estilos que almacena los estilos del navbar y del footer
+
+V1.5: Se agrego un menu de opciones en el email del navbar.

@@ -95,8 +95,12 @@ nav{
    color: var(--morado-claro) !important;
    font-size: var(--pp) !important;
    margin-right: 24px;
-
+   cursor: pointer;
 }
+.email:hover{
+    color: var(--rosa-claro) !important;
+}
+
 .navbar-shopping-cart {
     position: fixed;
     right: 26px;
@@ -117,6 +121,56 @@ nav{
     align-items: center;
     color: var(--morado-oscuro);
 }
+
+.desktop-menu {
+position: absolute;
+top: 60px;
+right: 50px;
+background-color: rgba(36,35,43,var(--tw-bg-opacity));
+width: 100px;
+height: auto;
+border: 1px solid var(--rosa-oscuro);
+border-radius: 6px;
+padding: 20px 20px 0 20px;
+z-index: 2;
+}
+.desktop-menu ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.desktop-menu ul li{
+text-align: end;
+}
+/* .desktop-menu ul li:nth-child(1), .desktop-menu ul li:nth-child(2){
+font-weight: bold;
+} */
+
+.desktop-menu ul li:nth-child(1) a:hover, .desktop-menu ul li:nth-child(2) a:hover {
+color: var(--morado-claro);
+}
+
+
+.desktop-menu ul li:nth-child(3){
+padding-top: 20px;
+border-top: 1px solid var(--rosa-oscuro);
+}
+.desktop-menu ul li:nth-child(3) a{
+color: red;  
+font-size: var(--sm);  
+}
+
+.desktop-menu ul li a {
+color: white;
+text-decoration: none;
+margin-bottom: 20px;
+display: inline-block;
+}
+
+.inactive{
+display: none;
+}
+
 @media (max-width: 640px) {
    .menu {
     display: block;
