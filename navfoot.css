@@ -103,7 +103,8 @@ nav{
 
 .navbar-shopping-cart {
     position: fixed;
-    right: 26px;
+    right: 200px;
+    cursor: pointer;
 
 }
 .navbar-shopping-cart div {
@@ -235,6 +236,10 @@ color: red !important;
    }
    .email{
     display: none;
+   }
+   .navbar-shopping-cart {
+    right: 12px;
+    top: 20px;
    }
 }
 
