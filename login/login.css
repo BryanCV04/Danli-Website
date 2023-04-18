@@ -49,7 +49,6 @@ margin: 0;
     margin-bottom: 0px;
     justify-self: center;
     display: none;
-
 }
 .subtitle{
   color: var(--rosa-claro);
@@ -59,7 +58,6 @@ margin: 0;
   margin-bottom: 40;
   text-align: center;
   width: 300px
-  
 }
 .subtitle::selection{
    background-color: var(--morado-oscuro);

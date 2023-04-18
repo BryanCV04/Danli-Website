@@ -318,7 +318,8 @@ footer{
     }
     
     .socialBox {
-        margin-bottom: 14px;
+        padding-left: 0;
+        margin-bottom: 24px;
     }
     .socialBox ul li{
         float: left;
@@ -328,15 +329,15 @@ footer{
         list-style: none;
     }
     .footer .socialBox ul li a{
-        display: block;
+        display: grid;
+        grid-template-rows: auto;
         font-size: 40px;
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        /* color: var(--rosa-oscuro); */
-        /* text-align: row; */
-        /* line-height: 60px; */
-        /* margin-right: 12px; */
+        padding-left: 0;
+        line-height: 60px;
+        
     }
     .socialBox ul li a:hover{
      width: 65px;
@@ -346,23 +347,33 @@ footer{
     .socialBox ul li+li{
     margin-left:10px
     }
-    .socialBox:before,.socialBox:after{
+
+    .clearfix{
+        padding-left: 0px;
+    }
+    /* .socialBox:before,.socialBox:after{
     content:" ";
     display:table
-    }
-    .clearfix:before,.clearfix:after{
+    } */
+    /* .clearfix:before,.clearfix:after{
     content:" ";
     display:table
     }
     .clearfix:after{
     clear:both
-    }
+    } */
     
     /* links de pagina estaticas */
+
+    .footerLinks{
+        padding-left: 0;
+    }
     
     .footer .footerLinks ul{
-    display:inline-block;
+    display: inline-block;
+    place-items: center;
     list-style: none;
+    padding-left: 0px;
     }
     .footer .footerLinks ul li{
     float:left;
@@ -384,7 +395,7 @@ footer{
     .footer .footerLinks ul:after{
     content:"";
     /* display:table; */
-    clear:both
+    /* clear:both */
     }
     
     .copyright{
@@ -397,6 +408,32 @@ footer{
     
     @media (max-width:640px) {
         .footer{
-            display: none;
+            overflow: hidden;
+            padding-left: 0;
+            padding-right: 0;
         }
+        .footer .footerLinks ul li{
+            float:none;
+        }    
+        .socialBox ul li+li{
+            margin-left: 15px;
+        }
+        .footerLinks ul{
+            display: grid;
+            place-items: center;
+        }
+        .footer .footerLinks ul li+li{
+            border-left:none;
+            }
+        .clearfix :nth-child(1){
+            margin-left: 0px !important;
+        }    
+        .footer .socialBox ul li a{
+            display: block;
+            font-size: 40px;
+            padding-left: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
     }
+}
