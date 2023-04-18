@@ -397,13 +397,25 @@ footer{
     /* display:table; */
     /* clear:both */
     }
+
+    .footerLinks ul li a::selection{
+        background-color: var(--morado-oscuro);
+    }
     
     .copyright{
         font-size: var(--pp);
     }
+
+    .copyright p::selection{
+        background-color: var(--morado-oscuro);
+    }
     
     .copyright a{
         color: var(--morado-claro);
+    }
+
+    .copyright a::selection{
+        background-color: var(--morado-oscuro);
     }
     
     @media (max-width:640px) {
