@@ -18,6 +18,7 @@ function clickonBody() {
     desktopMenu.classList.add('inactive');
     mobileMenu.classList.add('inactive');
     productDetail.classList.add('inactive');
+    opcionIdioma.classList.add('inactive');
 }
 
 // sign out mobile
@@ -41,3 +42,16 @@ shoppingCart.addEventListener('click', toggleShoppingCart)
 function toggleShoppingCart (){
     productDetail.classList.toggle('inactive');
 }
+
+// idiomas
+
+const imagenidioma = document.querySelector('.language-icon');
+const opcionIdioma = document.querySelector('.language-option');
+
+imagenidioma.addEventListener('click', toggleLanguage);
+
+function toggleLanguage (){
+    opcionIdioma.classList.toggle('inactive');
+}
+
+
