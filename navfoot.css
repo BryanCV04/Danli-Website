@@ -255,10 +255,23 @@ display: none;
 position:absolute;
 background-color: rgba(36,35,43,var(--tw-bg-opacity));
 top: 60px;
-padding: 0px 30px 0px 30px;
-width: 50%;
+/* padding: 0px 30px 0px 30px; */
+width: 93%;
 border: 1px solid var(--rosa-oscuro);
+border-radius: 0 0 16px 16px;
+margin-left: 2px;
 }
+
+.mobile-menu ul:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;   
+}
+
 .mobile-menu a {
 text-decoration: none;
 color: var(--white);
@@ -271,31 +284,58 @@ padding-left: 20px;
 color: var(--morado-claro) !important;
 }
 
-.mobile-menu ul {
-padding: 0;
-margin: 24px 0 0;
-list-style: none;
-}
-.mobile-menu ul:nth-child(1) {
+/* .mobile-menu ul:nth-child(1) {
 border-bottom: 1px solid var(--morado-claro);
-}
-.mobile-menu ul:last-child{
+} */
+.deslog{
 /* position: absolute; */
-bottom: 0;
+/* bottom: 0; */
+border-top: 1px solid var(--rosa-oscuro);
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content:center ;
+padding-top: 24px;
+padding-bottom: 24px;
+padding-left: 2rem;
+padding-right: 2rem;
+background-color: black;
+border-radius: 0 0 16px 16px;
 }
+
+.mobile-email{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+
 .mobile-menu ul li {
 margin-bottom: 24px;
 }
-.mobile-email {
-font-size: var(--pp);
-color: var(--rosa-claro) !important;
-font-weight: 300px !important;
+/* .mobile-emaill {
+/* font-size: var(--pp); */
+/* color: var(--morado-claro) !important; */
+/* font-weight: 300px !important; */
 /* position: absolute; */
-bottom: 10;
-}
+/* bottom: 10; */
+
 .sign-out {
 font-size: var(--pp);
-color: red !important;
+color:white !important;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: .5rem;
+padding-bottom: .5rem;
+border-width: 1px;
+background-color: red;
+border-radius: .375rem;
+margin-left: 60px;
+
+
 }
 
 @media (max-width: 640px) {
@@ -322,12 +362,16 @@ color: red !important;
    .language-option{
     right: 90px;
    }
+
 }
 
 @media (min-width: 641px) {
     .mobile-menu{
         display: none;
     }
+    .deslog{
+        display: none;
+       }
 }
 
 /* CARRITO ASIDE*/
