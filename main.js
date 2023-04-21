@@ -1,3 +1,9 @@
+// animacion
+setTimeout(function() {
+    document.querySelector('#loader').style.display = 'none';
+  }, 3000);
+  
+
 const email = document.querySelector('.email')
 const desktopMenu = document.querySelector('.desktop-menu');
 const login = document.querySelector('.login');
@@ -53,5 +59,3 @@ imagenidioma.addEventListener('click', toggleLanguage);
 function toggleLanguage (){
     opcionIdioma.classList.toggle('inactive');
 }
-
-
