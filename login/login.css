@@ -43,14 +43,15 @@ margin: 0;
     border: solid 1px black;
     padding: 16px;
 }
-.logo2{
+/* .logo2{
     background-color: #444141;
     display: inline-block;
     width: 300px;
     margin-bottom: 0px;
     justify-self: center;
     display: none;
-}
+} */
+
 .subtitle{
   color: var(--rosa-claro);
   font-size: var(--md);
@@ -143,6 +144,9 @@ margin: 0;
    height: 50px;
 }
 @media (max-width: 640px){
+.form-container{
+   margin-bottom: 150px;
+}
 .logo{
 display: block;
 }
@@ -150,16 +154,17 @@ display: block;
 position: absolute;
 bottom: 0;
 width: 300px;
-margin-bottom: 130px;
+margin-bottom: 190px;
 }
 .secundary-button {
+border: solid 1px var(--rosa-oscuro);
 position: absolute;
-bottom: 0;
+bottom: 50px;
 width: 300px;
 margin-bottom: 20px;
 }
 .separator span{
-background-color: rgb(84, 3, 155)
+display: none;
 }
 }
 
