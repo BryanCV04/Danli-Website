@@ -258,9 +258,12 @@ text-align: end;
 font-weight: bold;
 }
 
-.desktop-menu ul li:nth-child(1) a:hover, .desktop-menu ul li:nth-child(2) a:hover {
+.desktop-menu ul li:nth-child(1) a:hover{
 color: var(--morado-oscuro);
+}
 
+.desktop-menu ul li:nth-child(2) a:hover{
+    color: red;
 }
 
 .desktop-menu ul li:nth-child(3){

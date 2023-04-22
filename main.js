@@ -58,3 +58,17 @@ imagenidioma.addEventListener('click', toggleLanguage);
 function toggleLanguage (){
     opcionIdioma.classList.toggle('inactive');
 }
+
+// interaccion entre logo menu y notificaciones en responsive
+
+logoMnu.addEventListener('click', desactivarProductDetail)
+
+function desactivarProductDetail(){
+    productDetail.classList.add('inactive');
+}
+
+shoppingCart.addEventListener('click', desactivarMenu)
+
+function desactivarMenu (){
+    mobileMenu.classList.add('inactive')
+}
