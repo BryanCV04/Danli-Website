@@ -31,10 +31,10 @@ function clickonBody() {
 const logoMnu = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-logoMnu.addEventListener('click', toggleMobileMenu, closeDetails)
+logoMnu.addEventListener('click', toggleMobileMenu)
 
 function toggleMobileMenu (){
-    mobileMenu.classList.toggle('inactive')
+    mobileMenu.classList.toggle('inactive');
 }
 
 // aside carrito de compras
@@ -74,7 +74,8 @@ function desactivarProductDetail(){
 shoppingCart.addEventListener('click', desactivarMenu)
 
 function desactivarMenu (){
-    mobileMenu.classList.add('inactive')
+    mobileMenu.classList.add('inactive');
+    closeDetails();
 }
 
 // servicios precios e informacion
@@ -87,16 +88,26 @@ const cerrarCardContainer = document.querySelector('#product-detail-close');
 
 // abrir cerrar  aside con mas informacion del producto
 
+let darken = document.querySelector('.darken');
+
 function openDetails (){
     productDetailContainer.classList.remove('inactive');
+    darken.classList.remove('inactive');
 }
 
 cerrarCardContainer.addEventListener('click', closeDetails);
 
  function closeDetails (){
     productDetailContainer.classList.add('inactive');
- }
+    darken.classList.add('inactive');
 
+    if (mobileMenu.classList.contains('inactive')){
+        darken.classList.add('inactive')
+    } else {
+        darken.classList.remove('inactive')
+    }
+
+ }
 
 productList.push({
     name: 'Auditoria de la Marca ¡Pago Único!',
