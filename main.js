@@ -31,7 +31,7 @@ function clickonBody() {
 const logoMnu = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-logoMnu.addEventListener('click', toggleMobileMenu)
+logoMnu.addEventListener('click', toggleMobileMenu, closeDetails)
 
 function toggleMobileMenu (){
     mobileMenu.classList.toggle('inactive')
@@ -61,7 +61,11 @@ function toggleLanguage (){
 
 // interaccion entre logo menu y notificaciones en responsive
 
-logoMnu.addEventListener('click', desactivarProductDetail)
+// logoMnu.addEventListener('click', desactivarProductDetail, closeDetails)
+
+logoMnu.addEventListener('click', function(){
+    desactivarProductDetail(); closeDetails();
+});
 
 function desactivarProductDetail(){
     productDetail.classList.add('inactive');
@@ -76,8 +80,23 @@ function desactivarMenu (){
 // servicios precios e informacion
 
 let productList = [];
+const productDetailContainer = document.querySelector('#product-detail');
 
 const cardContainer = document.querySelector('.card-container');
+const cerrarCardContainer = document.querySelector('#product-detail-close');
+
+// abrir cerrar  aside con mas informacion del producto
+
+function openDetails (){
+    productDetailContainer.classList.remove('inactive');
+}
+
+cerrarCardContainer.addEventListener('click', closeDetails);
+
+ function closeDetails (){
+    productDetailContainer.classList.add('inactive');
+ }
+
 
 productList.push({
     name: 'Auditoria de la Marca',
@@ -165,7 +184,8 @@ function renderServices (arr){
         let productInfoFigure = document.createElement('figure');
         let ProductImgPLUS = document.createElement('img');
         ProductImgPLUS.setAttribute('src', '../assets/iconos/icono+svg-cropped.svg');
-    
+        ProductImgPLUS.addEventListener('click', openDetails)
+
         productInfoFigure.appendChild(ProductImgPLUS);
     
         productInfo.appendChild(productInfoDiv);
@@ -179,6 +199,9 @@ function renderServices (arr){
     }
 }
 renderServices(productList);
+
+
+
 
 
 
