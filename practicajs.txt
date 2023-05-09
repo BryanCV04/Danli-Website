@@ -81,6 +81,8 @@ document.createElement : nos ayuda a crear el elemento html que queramos
 
 
             informacionDetallada.push({
+
+                
     img: 'https://th.bing.com/th/id/OIG.CiJ8MZNbQqzN4wYils85?pcl=1b1a19&pid=ImgGn',
     p1: 'Auditoria de la Marca ¡Pago Único!',
     p2: 'Ref. $40',

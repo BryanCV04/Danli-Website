@@ -44,7 +44,7 @@ height: 50px;
     padding-top: 90px; 
     padding-bottom: 90px;
     width: 100%;
-    background-image: url(../assets/fondos/GARDIENT.SVG);
+    background-image: url(../assets/fondos/1.svg);
     background-size: cover;
 }   
 .card-container{
@@ -59,6 +59,7 @@ height: 50px;
     padding-bottom: 4px;
     border: 2px solid var(--rosa-oscuro);
     border-radius: 25px;
+    cursor: pointer
 }
 .product-card img{
     width: 240px; 
@@ -132,7 +133,9 @@ width: 80px;
 
 /* ASIDE DETALLES DE SERVICIO*/
 
-#product-detail{
+/* #product-detail{ */
+
+    #product-detail1, #product-detail2, #product-detail3, #product-detail4, #product-detail5, #product-detail6, #product-detail7, #product-detail8, #product-detail9, #product-detail10, #product-detail11, #product-detail12{
     margin-top: 63px;
     width: 360px;
     padding-bottom: 24px;
@@ -143,6 +146,7 @@ width: 80px;
     border-radius: 30px;
     z-index: 2;
 }
+
 #product-detail-close{
     width: 40px;
     height: 40px;
@@ -151,7 +155,7 @@ width: 80px;
     right: 25px;
     top: 25px
 }
-.close-icon{
+.close-icon1, .close-icon2, .close-icon3, .close-icon4, .close-icon5, .close-icon6, .close-icon7, .close-icon8, .close-icon9, .close-icon10, .close-icon11, .close-icon12 {
     transform:rotate(225deg);
 }
 
@@ -159,11 +163,20 @@ width: 80px;
     cursor: pointer;
 }
 #product-detail img:nth-child(2){
+
     width: 100%;
     height: 360px;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
 }
+
+#product-detail1 img:nth-child(2), #product-detail2 img:nth-child(2), #product-detail3 img:nth-child(2), #product-detail4 img:nth-child(2), #product-detail5 img:nth-child(2), #product-detail6 img:nth-child(2), #product-detail img:nth-child(2), #product-detail7 img:nth-child(2), #product-detail8 img:nth-child(2), #product-detail9 img:nth-child(2), #product-detail10 img:nth-child(2), #product-detail11 img:nth-child(2), #product-detail12 img:nth-child(2){
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
 #product-info {
     margin: 24px 24px 0 24px;
 }
@@ -171,13 +184,13 @@ width: 80px;
     font-weight: bold;
     font-size: var(--md);
     margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 26px;
 }
 #product-info p:nth-child(1){
     color: var(--very-light-pink);
     font-size: var(--md);
     margin-top: 0;
-    margin-bottom: 36px;
+    margin-bottom: 10px;
 }
 #product-info p:nth-child(3){
     color: var(--very-light-pink);
@@ -202,7 +215,7 @@ width: 80px;
     justify-content: center;
 }
 @media (max-width: 640px){
-    #product-detail{
+    #product-detail1, #product-detail2, #product-detail3, #product-detail4, #product-detail5, #product-detail6, #product-detail7, #product-detail8, #product-detail9, #product-detail10, #product-detail11, #product-detail12{
         width: 95%;
     }
 }
