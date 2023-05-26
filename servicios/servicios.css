@@ -209,6 +209,9 @@ width: 80px;
     font-weight: bold;
     height: 50px;
 }
+.primary-button22:hover{
+    background-color: var(--morado-oscuro);
+}
 .add-to-cart-button{
     display: flex;
     align-items: center;
